@@ -28,7 +28,7 @@ function BookmarkForm() {
         .then(data => {
             if (data['insertedId'] === undefined) {
                 toast.warn(
-                    "Unable To Add Book",
+                    "Unable To Add Bookmark",
                     { theme: 'dark', autoClose: 1500, hideProgressBar: true, pauseOnHover: false}
                 )
             } else {
@@ -72,7 +72,7 @@ function BookmarkForm() {
                     </div>
                 </div>
                 <div className="form-footer">
-                    <button onClick={e => handleSubmitForm(novelType, document.getElementById("title-input").value, document.getElementById("link-input").value, document.getElementById("author-input").value, document.getElementById("key-input").value)}>Add Book</button>
+                    <button onClick={e => handleSubmitForm(novelType, document.getElementById("title-input").value, document.getElementById("link-input").value, document.getElementById("author-input").value, document.getElementById("key-input").value)}>Add Bookmark</button>
                 </div>
             </div>
         </div>
